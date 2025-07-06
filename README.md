@@ -2,6 +2,10 @@
 
 A comprehensive dashboard application for dental centers to manage patients, appointments, and records. This frontend-only application simulates a fully functional dental center management system with role-based access control, localStorage-based data persistence, and responsive design.
 
+## Deployed Application
+
+**Live Demo**: [Dental Center Dashboard](https://dental-center-dashboard-phi.vercel.app/)
+
 ## Features
 
 - **Role-based Access Control**
@@ -190,73 +194,6 @@ npm run build
 
 This will create a `build` folder with optimized production files that can be deployed to any static hosting service like Netlify, Vercel, GitHub Pages, or AWS S3.
 
-### Simple Deployment with `serve`
-
-You can quickly test the production build locally:
-
-1. Install serve globally (if not already installed)
-
-   ```bash
-   npm install -g serve
-   ```
-
-2. Serve the production build
-
-   ```bash
-   serve -s build
-   ```
-
-3. Open your browser and navigate to the URL shown in the terminal (usually http://localhost:3000)
-
-### Deploying to Netlify
-
-1. Create an account on [Netlify](https://www.netlify.com/)
-2. From the Netlify dashboard, click "New site from Git"
-3. Connect your GitHub/GitLab/Bitbucket account
-4. Select your repository
-5. Set the build command to `npm run build`
-6. Set the publish directory to `build`
-7. Click "Deploy site"
-
-### Deploying to GitHub Pages
-
-1. Add homepage to package.json:
-
-   ```json
-   "homepage": "https://yourusername.github.io/dental-center-dashboard"
-   ```
-
-2. Install gh-pages:
-
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-3. Add deploy scripts to package.json:
-
-   ```json
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build",
-     // ...other scripts
-   }
-   ```
-
-4. Deploy:
-   ```bash
-   npm run deploy
-   ```
-
-## Next Steps
-
-- Implement dark mode theme support
-- Add multi-language support
-- Integrate with PDF generation for reports
-- Add appointment reminders and notifications
-- Enhance the calendar view with more features
-- Implement data export/import functionality
-- Add more detailed analytics for admin dashboard
-
 ## Project Structure
 
 ```
@@ -294,4 +231,3 @@ dental-center-dashboard/
 ## License
 
 This project is licensed under the MIT License.
-
